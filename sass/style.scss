@@ -1,12 +1,141 @@
+
+// Font Montserrat
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+// Mixins
+// flex
+@import 'mixin/flex';
+// footer
+@import 'mixin/footer';
+
+
+// Pages
+// bio
+@import 'pages/bio.scss';
+// obras
+@import 'pages/obras.scss';
+// contacto
+@import 'pages/contacto';
+
+// Estilos
+// colores
+@import'mixin/colors.scss';
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat';
+    color: $negro;
 }
 
 body{
-    background-color: lightgreen;
+    padding: 0 1em;
+    background-color: rgb(254, 254, 254);
+    main{
+        display: flex;
+        flex-direction: column;
+        gap: 5em;
+        justify-content: space-evenly;
+        align-items: center;
+        .inicio{
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto 1fr auto;
+            align-items: center;
+            justify-items: center;
+            .pinturas{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                gap: 5em;
+                h2{
+                    color: rgb(11, 11, 11);
+                    font-size: 2em;
+                    font-weight: 300;
+                }
+            }
+            img{
+                width: 450px;
+            }
+            .hamburg{
+                width: 30px;
+                height: 30px;
+                transition: all 600ms;
+                transform: translate(4em);
+                span{
+                    display: block;
+                    width: 100%;
+                    height: 2px;
+                    background-color: $negro;
+                    margin-top: 6px;
+                    cursor: pointer;
+                    transition: all 300ms;
+                    transform-origin: 0px 100%;
+                    }    
+                } 
+            .nav{
+                opacity: 0;
+                visibility: hidden;
+                transform: translate(-10em, -3em);
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1em;
+                    li{
+                        list-style: none;
+                        a{
+                            font-size: 1.5em;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+            .nav_visible{
+                        opacity: 1;
+                        visibility: visible ;
+                        
+            }
+        }
+        .logo{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 5em;
+            margin-top: 5em;
+
+            img{
+                border: 1px solid black;
+            }
+            h2{
+                font-size: 2em;
+                font-weight: 300;
+            }
+            p{
+                width: 40%;
+                padding: 1em;
+                border: 1px solid black;
+            }
+        }
+    }
+    footer{
+        @include footer();
+    }
+  
 }
-h1{
-    color: rgb(22, 63, 226);
+
+// animacion de hamburguesa
+
+.lin1{
+    transform: rotate(45deg) translate(-2px, 1px);
+}
+.lin2{
+    opacity: 0;
+    margin-left: -10px;
+}      
+.lin3{
+    transform: rotate(-45deg) translate(-4px, 2px);
 }

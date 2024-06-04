@@ -1,0 +1,65 @@
+@mixin footer{
+    @include flex_column();
+    width: 60%;
+    margin: 0 auto;
+    gap: 1em;
+    padding: 2em;
+    background-color: rgb(234, 234, 234);
+
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        .title_footer{
+            background-color: rgb(23, 24, 24);
+        }
+        .left_footer{
+            background-color: rgb(127, 133, 255);
+        } 
+        .linea{
+            background-color: rgb(24, 59, 48);
+        } 
+        .right_footer{
+            background-color: rgb(179, 132, 45);
+        }    
+
+    }
+    
+}
+
+
+
+// .footer {
+//     display: grid;
+//     grid-template-areas: 
+//         "title"
+//         "item1 item2 item3";
+//     grid-template-rows: auto 1fr; // Fila para el título y fila para los items
+//     grid-template-columns: repeat(3, 1fr); // Tres columnas iguales para los items
+//     gap: 1em; // Espacio entre los items
+
+//     &-title {
+//         grid-area: title;
+//         text-align: center; // Centrar el título
+//         background: #333;
+//         color: #fff;
+//         padding: 1em;
+//     }
+
+//     &-item {
+//         background: #f0f0f0;
+//         padding: 1em;
+//         text-align: center;
+
+//         &:nth-child(2) {
+//             grid-area: item1;
+//         }
+//         &:nth-child(3) {
+//             grid-area: item2;
+//         }
+//         &:nth-child(4) {
+//             grid-area: item3;
+//         }
+//     }
+// }
