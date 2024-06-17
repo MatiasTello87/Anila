@@ -31,10 +31,5 @@ document.addEventListener('click', (e) => {
       linea1.classList.remove('lin1');
       linea2.classList.remove('lin2');
       linea3.classList.remove('lin3');
-      
-      
-      // nav.classList.remove('active');
-  // nav.classList.remove('visible');
-    // hamburg.style.display= 'block';
     }
   });

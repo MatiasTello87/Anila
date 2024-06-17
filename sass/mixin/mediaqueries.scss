@@ -1,0 +1,111 @@
+@media screen and (max-width: 768px){
+    body{
+        header{
+            .hamburg{
+                .nav_2{
+                    ul{
+                        gap: .7em;
+                        flex-direction: row;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        transform: translate(-12em,-3em);
+                    }
+                }
+            }
+        }
+        // pagina de inicio - hamburg - footer
+        main{
+            .inicio{
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: space-around;
+                align-items: center;
+                gap: 3em;
+                .pinturas{
+                    flex-direction: row;
+                    gap: 1em;
+                }
+                .hamburg{
+                    margin-bottom: 2em;
+                    transform: translate(12em,2em);
+                    .nav{
+                        transform: translate(-10em,1em);
+                        ul{
+                            flex-direction: row;
+                            li{
+                                a{
+                                    font-size: 1.2em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        footer{
+            .grid_contacto{
+                width: 90%;
+                .item_contacto{
+                    font-size: .6em;
+                    gap: .5em;
+                }
+            }
+        }
+    }
+    .main_obras{
+        .imagen{
+            width: 100%;
+        }
+        h1{
+            color: rgb(25, 24, 27);
+        }
+        .grid_acuarela{
+            @include flex-column();
+            .pint_acuarela{
+                p{
+                    width: 100%;
+                }
+            }
+            .item_pint{
+                width: 60%;
+            }
+        }
+        .grid_varios{
+            @include flex-column();
+        }
+        .grid_retratos{
+            @include flex-column();
+            .item_retratos{
+                div{
+                    img{
+                        margin:0;
+                    }
+                }
+            }
+
+        }
+        .grid_murales{
+            @include flex-column();
+            .item_murales{
+                div{
+                    img{
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+    .main_bio{
+        .section_bio{
+            .bio_intro{
+                @include flex-column();
+            }
+            .servicios{
+                @include flex-column();
+                div{
+                    transform: translateY(0);
+                }
+            }
+        }
+    } 
+}

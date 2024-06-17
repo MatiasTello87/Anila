@@ -1,14 +1,13 @@
 
 // header de paginas secundarias
 header{
-    padding: 1em;
-    border: 1px solid black;
+    padding: 1em 3em;
+    display: flex;
+    justify-content: end;
     .hamburg{
         width: 30px;
         height: 30px;
         transition: all 600ms;
-        transform: translate(4em);
-
         span{
             display: block;
             width: 100%;
@@ -24,12 +23,13 @@ header{
     .nav_2{
         opacity: 0;
         visibility: hidden;
-        transform: translate(-1em, 2em);
+        transform: translate(0, 4em);
         
         ul{
             display: flex;
             flex-direction: column;
             gap: 1em;
+            align-items: end;
             li{
                 list-style: none;
                 a{
@@ -48,24 +48,47 @@ header{
 .main_bio{
     @include flex_column();
     padding: 4em 2em;
-    h1{
-        color: rgb(37, 25, 21);
-    }
+   
     .section_bio{
         @include flex_column();
         gap: 1em;
-        p{
-            color: rgb(38, 36, 36);
-            width: 50%;
+        .bio_intro{
+            display: grid;
+            grid-template-columns: 45% 45%;
+            gap: 2em;
+            justify-content: center;
+            margin: 1em 0;
+            img{
+                width: 100%;
+            }
+            p{
+                margin-top: .5em;
+            }
         }
-        ul{
-            margin-left: 5em;
-            li{
-                margin-top: 1em;
-                span{
-                    display: block;
+        .servicios{
+            display: grid;
+            grid-template-columns: 45% 45%;
+            gap: 2em;
+            justify-content: center;
+            margin: 1em 0;
+            div{
+                text-align: end;
+                transform: translateY(7em);
+                ul{
+                    list-style: none;
+                    li{
+                        margin-top: 1em;
+                        span{
+                            display: block;
+                        }
+                    }
                 }
             }
+            img{
+                width: 100%;
+            }
+            
+            
         }
     }
 }

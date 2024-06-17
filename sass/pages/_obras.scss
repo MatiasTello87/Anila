@@ -18,9 +18,10 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: 3em;
+            gap: 2em;
             // text-align: center;
            p{
+            text-align: start;
             width: 50%;
            }
         }
@@ -35,9 +36,12 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto auto;
         gap: 5em;
-        :nth-child(1){
-            background-color: aquamarine;
+        p{
+            width: 70%;
         }
+        // :nth-child(1){
+        //     background-color: aquamarine;
+        // }
     }
     .grid_retratos{
         display: grid;
@@ -48,10 +52,12 @@
         align-items: center;
         justify-items: center;
         .item_retratos{
-            div{
-                text-align: center;
-                img{
-                    margin: 1em 3em;
+            .item_murales{
+                div{
+                    text-align: center;
+                    img{
+                        margin: 1em 3em;
+                    }
                 }
             }
         }

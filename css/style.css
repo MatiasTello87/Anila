@@ -1,12 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 45%;
+  transform: translate(-45%);
+  height: 100vh;
+  z-index: 1000;
+  object-fit: contain;
+  box-shadow: 0 0 0 100vmax #fefefe; }
+
 header {
-  padding: 1em;
-  border: 1px solid black; }
+  padding: 1em 3em;
+  display: flex;
+  justify-content: end; }
   header .hamburg {
     width: 30px;
     height: 30px;
-    transition: all 600ms;
-    transform: translate(4em); }
+    transition: all 600ms; }
     header .hamburg span {
       display: block;
       width: 100%;
@@ -19,11 +29,12 @@ header {
   header .nav_2 {
     opacity: 0;
     visibility: hidden;
-    transform: translate(-1em, 2em); }
+    transform: translate(0, 4em); }
     header .nav_2 ul {
       display: flex;
       flex-direction: column;
-      gap: 1em; }
+      gap: 1em;
+      align-items: end; }
       header .nav_2 ul li {
         list-style: none; }
         header .nav_2 ul li a {
@@ -41,8 +52,6 @@ header {
   justify-content: space-evenly;
   gap: 2em;
   padding: 4em 2em; }
-  .main_bio h1 {
-    color: #251915; }
   .main_bio .section_bio {
     display: flex;
     flex-direction: column;
@@ -50,15 +59,33 @@ header {
     justify-content: space-evenly;
     gap: 2em;
     gap: 1em; }
-    .main_bio .section_bio p {
-      color: #262424;
-      width: 50%; }
-    .main_bio .section_bio ul {
-      margin-left: 5em; }
-      .main_bio .section_bio ul li {
-        margin-top: 1em; }
-        .main_bio .section_bio ul li span {
-          display: block; }
+    .main_bio .section_bio .bio_intro {
+      display: grid;
+      grid-template-columns: 45% 45%;
+      gap: 2em;
+      justify-content: center;
+      margin: 1em 0; }
+      .main_bio .section_bio .bio_intro img {
+        width: 100%; }
+      .main_bio .section_bio .bio_intro p {
+        margin-top: .5em; }
+    .main_bio .section_bio .servicios {
+      display: grid;
+      grid-template-columns: 45% 45%;
+      gap: 2em;
+      justify-content: center;
+      margin: 1em 0; }
+      .main_bio .section_bio .servicios div {
+        text-align: end;
+        transform: translateY(7em); }
+        .main_bio .section_bio .servicios div ul {
+          list-style: none; }
+          .main_bio .section_bio .servicios div ul li {
+            margin-top: 1em; }
+            .main_bio .section_bio .servicios div ul li span {
+              display: block; }
+      .main_bio .section_bio .servicios img {
+        width: 100%; }
 
 .main_obras {
   display: flex;
@@ -79,8 +106,9 @@ header {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 3em; }
+      gap: 2em; }
       .main_obras .grid_acuarela .pint_acuarela p {
+        text-align: start;
         width: 50%; }
     .main_obras .grid_acuarela :nth-child(1) {
       grid-column: 1/5;
@@ -90,8 +118,8 @@ header {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto;
     gap: 5em; }
-    .main_obras .grid_varios :nth-child(1) {
-      background-color: aquamarine; }
+    .main_obras .grid_varios p {
+      width: 70%; }
   .main_obras .grid_retratos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -99,9 +127,9 @@ header {
     gap: 3em;
     align-items: center;
     justify-items: center; }
-    .main_obras .grid_retratos .item_retratos div {
+    .main_obras .grid_retratos .item_retratos .item_murales div {
       text-align: center; }
-      .main_obras .grid_retratos .item_retratos div img {
+      .main_obras .grid_retratos .item_retratos .item_murales div img {
         margin: 1em 3em; }
     .main_obras .grid_retratos :nth-child(1) {
       grid-column: 1/4;
@@ -264,6 +292,12 @@ body {
       grid-template-rows: auto 1fr auto;
       align-items: center;
       justify-items: center; }
+      body main .inicio .name {
+        font-size: 3em;
+        font-weight: 400;
+        position: absolute;
+        left: 8%;
+        top: 8%; }
       body main .inicio .pinturas {
         display: flex;
         flex-direction: column;
@@ -305,46 +339,32 @@ body {
       body main .inicio .nav_visible {
         opacity: 1;
         visibility: visible; }
-    body main .logo {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-      gap: 5em;
-      margin-top: 5em; }
-      body main .logo img {
-        border: 1px solid black; }
-      body main .logo h2 {
-        font-size: 2em;
-        font-weight: 300; }
-      body main .logo p {
-        width: 40%;
-        padding: 1em;
-        border: 1px solid black; }
-  body footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 2em;
+  body footer .grid_contacto {
+    display: grid;
     width: 60%;
-    margin: 0 auto;
-    gap: 1em;
-    padding: 2em;
-    background-color: #eaeaea; }
-    body footer div {
+    margin: 2em auto 0;
+    justify-content: center;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 45% 45%;
+    padding: 1em;
+    gap: .5em;
+    border: 1px solid #0f0f0f;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px; }
+    body footer .grid_contacto :nth-child(3) {
       display: flex;
-      justify-content: center;
+      justify-content: end; }
+    body footer .grid_contacto :nth-child(1) {
+      display: flex;
+      justify-content: end; }
+    body footer .grid_contacto .item_contacto {
+      display: flex;
       align-items: center;
       gap: 1em; }
-      body footer div .title_footer {
-        background-color: #171818; }
-      body footer div .left_footer {
-        background-color: #7f85ff; }
-      body footer div .linea {
-        background-color: #183b30; }
-      body footer div .right_footer {
-        background-color: #b3842d; }
+      body footer .grid_contacto .item_contacto img {
+        height: 24px; }
+      body footer .grid_contacto .item_contacto .flag {
+        height: 18px; }
 
 .lin1 {
   transform: rotate(45deg) translate(-2px, 1px); }
@@ -355,3 +375,84 @@ body {
 
 .lin3 {
   transform: rotate(-45deg) translate(-4px, 2px); }
+
+@media screen and (max-width: 768px) {
+  body header .hamburg .nav_2 ul {
+    gap: .7em;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: translate(-12em, -3em); }
+  body main .inicio {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3em; }
+    body main .inicio .pinturas {
+      flex-direction: row;
+      gap: 1em; }
+    body main .inicio .hamburg {
+      margin-bottom: 2em;
+      transform: translate(12em, 2em); }
+      body main .inicio .hamburg .nav {
+        transform: translate(-10em, 1em); }
+        body main .inicio .hamburg .nav ul {
+          flex-direction: row; }
+          body main .inicio .hamburg .nav ul li a {
+            font-size: 1.2em; }
+  body footer .grid_contacto {
+    width: 90%; }
+    body footer .grid_contacto .item_contacto {
+      font-size: .6em;
+      gap: .5em; }
+  .main_obras .imagen {
+    width: 100%; }
+  .main_obras h1 {
+    color: #19181b; }
+  .main_obras .grid_acuarela {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2em; }
+    .main_obras .grid_acuarela .pint_acuarela p {
+      width: 100%; }
+    .main_obras .grid_acuarela .item_pint {
+      width: 60%; }
+  .main_obras .grid_varios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2em; }
+  .main_obras .grid_retratos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2em; }
+    .main_obras .grid_retratos .item_retratos div img {
+      margin: 0; }
+  .main_obras .grid_murales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2em; }
+    .main_obras .grid_murales .item_murales div img {
+      margin: 0; }
+  .main_bio .section_bio .bio_intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2em; }
+  .main_bio .section_bio .servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2em; }
+    .main_bio .section_bio .servicios div {
+      transform: translateY(0); } }
