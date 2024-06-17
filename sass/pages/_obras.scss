@@ -1,7 +1,4 @@
 
-// .header_dos{
-//     @include header_dos();
-// }
 
 .main_obras{
     @include flex_column();
@@ -51,16 +48,6 @@
         gap: 3em;
         align-items: center;
         justify-items: center;
-        .item_retratos{
-            .item_murales{
-                div{
-                    text-align: center;
-                    img{
-                        margin: 1em 3em;
-                    }
-                }
-            }
-        }
         :nth-child(1){
             grid-column: 1/4;
             grid-row: 1/2;
@@ -132,6 +119,10 @@
         :nth-child(1){
             grid-column: 1/4;
             grid-row: 1/2;
+            text-align: center;
+            h5{
+                margin-bottom: 1em;
+            }
         }
         :nth-child(2){
             grid-column: 1/4;

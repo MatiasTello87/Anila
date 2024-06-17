@@ -127,10 +127,6 @@ header {
     gap: 3em;
     align-items: center;
     justify-items: center; }
-    .main_obras .grid_retratos .item_retratos .item_murales div {
-      text-align: center; }
-      .main_obras .grid_retratos .item_retratos .item_murales div img {
-        margin: 1em 3em; }
     .main_obras .grid_retratos :nth-child(1) {
       grid-column: 1/4;
       grid-row: 1/2; }
@@ -182,7 +178,10 @@ header {
         margin: 1em 3em; }
     .main_obras .grid_murales :nth-child(1) {
       grid-column: 1/4;
-      grid-row: 1/2; }
+      grid-row: 1/2;
+      text-align: center; }
+      .main_obras .grid_murales :nth-child(1) h5 {
+        margin-bottom: 1em; }
     .main_obras .grid_murales :nth-child(2) {
       grid-column: 1/4;
       grid-row: 2/3; }
