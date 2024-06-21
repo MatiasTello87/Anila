@@ -587,3 +587,11 @@ body {
     gap: 2em; }
     .main_bio .section_bio .servicios div {
       transform: translateY(0); } }
+
+@media screen and (max-width: 468px) {
+  body main .inicio .name {
+    left: 5%; }
+  body main .inicio .pinturas {
+    flex-direction: column; }
+  body footer p {
+    font-size: .8em; } }

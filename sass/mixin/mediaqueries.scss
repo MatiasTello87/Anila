@@ -116,3 +116,24 @@
         }
     } 
 }
+
+
+@media screen and (max-width: 468px){
+    body{
+        main{
+            .inicio{
+                .name{
+                    left: 5%;
+                }
+                .pinturas{
+                    flex-direction: column;
+                }
+            }
+        }
+        footer{
+                p{
+                    font-size: .8em;
+                }
+        }
+    }
+}
