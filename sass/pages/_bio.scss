@@ -54,41 +54,32 @@ header{
         gap: 1em;
         .bio_intro{
             display: grid;
-            grid-template-columns: 45% 45%;
-            gap: 2em;
+            grid-template-columns: 40% 40%;
+            // gap: 2em;
             justify-content: center;
-            margin: 1em 0;
+            // align-items: ;
+            margin: 3em 0;
             img{
-                width: 100%;
+                width: 60%;
+                margin: 0 auto;
             }
             p{
-                margin-top: .5em;
+                text-wrap: balance;
             }
         }
-        .servicios{
-            display: grid;
-            grid-template-columns: 45% 45%;
-            gap: 2em;
-            justify-content: center;
-            margin: 1em 0;
-            div{
-                text-align: end;
-                transform: translateY(7em);
-                ul{
-                    list-style: none;
-                    li{
-                        margin-top: 1em;
-                        span{
-                            display: block;
-                        }
+        .encargos{
+            // h3{
+            //     color: aqua;
+            // }
+            ul{
+                list-style: none;
+                li{
+                    margin-top: 1em;
+                    span{
+                        display: block;
                     }
                 }
             }
-            img{
-                width: 100%;
-            }
-            
-            
         }
     }
 }

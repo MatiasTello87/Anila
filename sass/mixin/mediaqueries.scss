@@ -21,13 +21,20 @@
                 justify-content: space-around;
                 align-items: center;
                 gap: 3em;
+                .name{
+                    left: 13%;
+                    top: 5%;
+                }
                 .pinturas{
                     flex-direction: row;
-                    gap: 1em;
+                    flex-wrap: wrap;
+                    width: 70%;
+                    justify-content: center;
+                    gap: .5em;
                 }
                 .hamburg{
                     margin-bottom: 2em;
-                    transform: translate(12em,2em);
+                    transform: translate(12em,3em);
                     .nav{
                         transform: translate(-10em,1em);
                         ul{
