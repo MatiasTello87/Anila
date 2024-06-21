@@ -34,7 +34,7 @@
                 }
                 .hamburg{
                     margin-bottom: 2em;
-                    transform: translate(12em,3em);
+                    transform: translate(10em,3em);
                     .nav{
                         transform: translate(-10em,1em);
                         ul{
@@ -128,6 +128,9 @@
                 .pinturas{
                     flex-direction: column;
                 }
+                // .hamburg{
+                //     transform: translate(-1em, 0);
+                // }
             }
         }
         footer{
