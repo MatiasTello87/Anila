@@ -8,7 +8,7 @@
                         flex-direction: row;
                         justify-content: space-evenly;
                         align-items: center;
-                        transform: translate(-12em,-3em);
+                        transform: translate(-19em,-5.5em);
                     }
                 }
             }
@@ -20,7 +20,7 @@
                 flex-direction: column-reverse;
                 justify-content: space-around;
                 align-items: center;
-                gap: 1em;
+                gap: 3em;
                 .name{
                     left: 13%;
                     top: 5%;
@@ -115,11 +115,13 @@
         .section_bio{
             .bio_intro{
                 @include flex-column();
+                margin: 0;
             }
-            .servicios{
-                @include flex-column();
-                div{
-                    transform: translateY(0);
+            .encargos{
+                // @include flex-column();
+                ul{
+                    // transform: translateY(0);
+                    text-align: center;
                 }
             }
         }

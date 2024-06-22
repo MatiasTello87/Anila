@@ -390,7 +390,8 @@ main .section_contacto {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat';
-  color: #0b0b0bde; }
+  color: #0b0b0bde;
+  line-height: 1.3em; }
 
 body {
   padding: 0 1em;
@@ -507,13 +508,13 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    transform: translate(-12em, -3em); }
+    transform: translate(-19em, -5.5em); }
   body main .inicio {
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-around;
     align-items: center;
-    gap: 1em; }
+    gap: 3em; }
     body main .inicio .name {
       left: 13%;
       top: 5%; }
@@ -586,15 +587,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    gap: 2em; }
-  .main_bio .section_bio .servicios {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 2em; }
-    .main_bio .section_bio .servicios div {
-      transform: translateY(0); } }
+    gap: 2em;
+    margin: 0; }
+  .main_bio .section_bio .encargos ul {
+    text-align: center; } }
 
 @media screen and (max-width: 468px) {
   body main .inicio .name {
