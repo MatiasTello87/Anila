@@ -83,7 +83,7 @@ header {
   align-items: center;
   justify-content: space-evenly;
   gap: 2em;
-  gap: 7em;
+  gap: 5em;
   padding: 4em 2em; }
   .main_obras .grid_acuarela {
     display: grid;
@@ -513,7 +513,7 @@ body {
     flex-direction: column-reverse;
     justify-content: space-around;
     align-items: center;
-    gap: 3em; }
+    gap: 1em; }
     body main .inicio .name {
       left: 13%;
       top: 5%; }
@@ -539,42 +539,48 @@ body {
     body footer .grid_contacto .item_contacto {
       font-size: .6em;
       gap: .5em; }
-  .main_obras .imagen {
-    width: 100%; }
-  .main_obras h1 {
-    color: #19181b; }
-  .main_obras .grid_acuarela {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 2em; }
-    .main_obras .grid_acuarela .pint_acuarela p {
+  .main_obras {
+    gap: 1em;
+    padding: 0; }
+    .main_obras .margen_horizontal {
+      flex-direction: column; }
+    .main_obras .imagen {
       width: 100%; }
-    .main_obras .grid_acuarela .item_pint {
-      width: 60%; }
-  .main_obras .grid_varios {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 2em; }
-  .main_obras .grid_retratos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 2em; }
-    .main_obras .grid_retratos .item_retratos div img {
-      margin: 0; }
-  .main_obras .grid_murales {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 2em; }
-    .main_obras .grid_murales .item_murales div img {
-      margin: 0; }
+    .main_obras .grid_acuarela {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 2em; }
+      .main_obras .grid_acuarela .pint_acuarela p {
+        width: 100%; }
+      .main_obras .grid_acuarela .item_pint {
+        width: 70%; }
+    .main_obras .grid_varios {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 2em; }
+      .main_obras .grid_varios .varios_lineas {
+        flex-direction: column;
+        width: 100%; }
+    .main_obras .grid_retratos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 2em; }
+      .main_obras .grid_retratos .item_retratos div img {
+        margin: 0; }
+    .main_obras .grid_murales {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 2em; }
+      .main_obras .grid_murales .item_murales div img {
+        margin: 0; }
   .main_bio .section_bio .bio_intro {
     display: flex;
     flex-direction: column;

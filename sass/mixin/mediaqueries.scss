@@ -20,7 +20,7 @@
                 flex-direction: column-reverse;
                 justify-content: space-around;
                 align-items: center;
-                gap: 3em;
+                gap: 1em;
                 .name{
                     left: 13%;
                     top: 5%;
@@ -63,11 +63,13 @@
         }
     }
     .main_obras{
+        gap: 1em;
+        padding: 0;
+        .margen_horizontal{
+            flex-direction: column;
+        }
         .imagen{
             width: 100%;
-        }
-        h1{
-            color: rgb(25, 24, 27);
         }
         .grid_acuarela{
             @include flex-column();
@@ -77,11 +79,15 @@
                 }
             }
             .item_pint{
-                width: 60%;
+                width: 70%;
             }
         }
         .grid_varios{
             @include flex-column();
+            .varios_lineas{
+                flex-direction: column;
+                width: 100%;
+            }
         }
         .grid_retratos{
             @include flex-column();
