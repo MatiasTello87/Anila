@@ -37,7 +37,73 @@
 
 body{
     padding: 0 1em;
-    background-color: rgb(254, 254, 254);
+    .header_inicio{
+        position: absolute;
+        top: 50%;
+        left: -10%;
+        padding: 2em;
+        top: 0;
+    }
+    header{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        padding: 2em;
+        position: sticky;
+        top: 0;
+        // background-color: rgb(242, 238, 238);
+
+        .hamburg{
+            width: 30px;
+            height: 30px;
+            transition: all 600ms;
+
+            span{
+                display: block;
+                width: 100%;
+                height: 2px;
+                background-color: $negro;
+                margin-top: 6px;
+                cursor: pointer;
+                transition: all 300ms;
+                transform-origin: 0px 100%;
+                }    
+            } 
+        .nav{
+            opacity: 0;
+            visibility: hidden;
+            width: 130px;
+            padding: 1em;
+            transform: translate(-12em,-2em);
+            border-radius: 5px;
+
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+                li{
+                    list-style: none;
+                    :hover{
+                        color: rgb(177, 177, 177);
+                    }
+                    a{
+                        font-size: 1.5em;
+                        text-decoration: none;
+                        
+                    }
+                }
+            }
+        }
+        .nav_inicio{
+            transform: translate(-10em, -5.5em);
+            border: none;
+            
+        }
+        .nav_visible{
+            opacity: 1;
+            visibility: visible ;
+        }   
+    }
     main{
         display: flex;
         flex-direction: column;
@@ -82,44 +148,8 @@ body{
             img{
                 width: 450px;
             }
-            .hamburg{
-                width: 30px;
-                height: 30px;
-                transition: all 600ms;
-                transform: translate(4em);
-                span{
-                    display: block;
-                    width: 100%;
-                    height: 2px;
-                    background-color: $negro;
-                    margin-top: 6px;
-                    cursor: pointer;
-                    transition: all 300ms;
-                    transform-origin: 0px 100%;
-                    }    
-                } 
-            .nav{
-                opacity: 0;
-                visibility: hidden;
-                transform: translate(-10em, -4em);
-                ul{
-                    display: flex;
-                    flex-direction: column;
-                    gap: 1em;
-                    li{
-                        list-style: none;
-                        a{
-                            font-size: 1.5em;
-                            text-decoration: none;
-                        }
-                    }
-                }
-            }
-            .nav_visible{
-                        opacity: 1;
-                        visibility: visible ;
-                        
-            }
+            
+            
         }
     }
     footer{
