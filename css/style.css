@@ -52,13 +52,13 @@
   justify-content: space-evenly;
   gap: 2em;
   gap: 5em;
-  padding: 0 2em; }
+  padding: 2em; }
   .main_obras .grid_acuarela {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto auto;
     gap: 3em 1em;
-    padding: 2em 1em;
+    padding: 4em 1em;
     text-align: center; }
     .main_obras .grid_acuarela h2 {
       color: #0b0b0bde;
@@ -81,6 +81,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto auto auto;
     gap: 3em;
+    padding: 4em 1em;
     text-align: center; }
     .main_obras .grid_varios h2 {
       color: #0b0b0bde;
@@ -107,6 +108,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(10, auto);
     gap: 3em;
+    padding: 4em 1em;
     align-items: center;
     justify-items: center; }
     .main_obras .grid_auto h2 {
@@ -145,6 +147,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, auto);
     gap: 3em;
+    padding: 4em 1em;
     align-items: center;
     justify-items: center; }
     .main_obras .grid_retratos h2 {
@@ -171,6 +174,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, auto);
     gap: 1em;
+    padding: 4em 1em;
     align-items: center;
     justify-items: center; }
     .main_obras .grid_heladería h2 {
@@ -203,6 +207,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, auto);
     gap: 1em;
+    padding: 4em 1em;
     align-items: center;
     justify-items: center; }
     .main_obras .grid_conejo .mural_titles {
@@ -225,6 +230,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, auto);
     gap: 1em;
+    padding: 4em 1em;
     align-items: center;
     justify-items: center; }
     .main_obras .grid_yacante .mural_titles {
@@ -250,6 +256,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
     gap: 1em;
+    padding: 4em 1em;
     align-items: center;
     justify-items: center; }
     .main_obras .grid_khalo .mural_titles {
@@ -269,6 +276,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, auto);
     gap: 1em;
+    padding: 4em 1em;
     align-items: center;
     justify-items: center; }
     .main_obras .grid_rawson .mural_titles {
@@ -291,6 +299,7 @@
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(9, auto);
     gap: 1em;
+    padding: 4em 1em;
     align-items: center;
     justify-items: center; }
     .main_obras .grid_hamburg .mural_titles {
@@ -328,6 +337,7 @@
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(5, auto);
     gap: 1em;
+    padding: 4em 1em;
     align-items: center;
     justify-items: center; }
     .main_obras .grid_muebles h2 {
