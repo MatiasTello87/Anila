@@ -178,12 +178,14 @@
       font-size: 2.5em;
       font-weight: 300; }
     .main_obras .grid_heladería .mural_titles {
-      text-align: center; }
+      text-align: center;
+      margin: 1em; }
       .main_obras .grid_heladería .mural_titles h4 {
         font-size: 1.7em;
-        font-weight: 300; }
+        font-weight: 300;
+        text-wrap: balance; }
     .main_obras .grid_heladería h2 {
-      margin-bottom: 2em; }
+      margin: 1em; }
     .main_obras .grid_heladería div h5 {
       margin-bottom: 2em; }
     .main_obras .grid_heladería :nth-child(1) {

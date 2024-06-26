@@ -158,13 +158,15 @@
         }
         .mural_titles{
             text-align: center;
+            margin: 1em;
             h4{
                 font-size: 1.7em;
                 font-weight: 300;
+                text-wrap: balance;
             }
         }
         h2{
-            margin-bottom: 2em;
+            margin: 1em;
         }
         div{
             h5{
