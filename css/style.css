@@ -93,6 +93,8 @@
       display: flex;
       justify-content: center;
       gap: 1em 3em; }
+      .main_obras .grid_varios .varios_lineas div {
+        text-align: start; }
     .main_obras .grid_varios :nth-child(1) {
       grid-column: 1/4;
       grid-row: 1/2;
@@ -108,9 +110,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(10, auto);
     gap: 3em;
-    padding: 4em 1em;
-    align-items: center;
-    justify-items: center; }
+    padding: 4em 1em; }
     .main_obras .grid_auto h2 {
       color: #0b0b0bde;
       font-size: 2.5em;
@@ -147,9 +147,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, auto);
     gap: 3em;
-    padding: 4em 1em;
-    align-items: center;
-    justify-items: center; }
+    padding: 4em 1em; }
     .main_obras .grid_retratos h2 {
       color: #0b0b0bde;
       font-size: 2.5em;
@@ -174,9 +172,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, auto);
     gap: 1em;
-    padding: 4em 1em;
-    align-items: center;
-    justify-items: center; }
+    padding: 4em 1em; }
     .main_obras .grid_heladería h2 {
       color: #0b0b0bde;
       font-size: 2.5em;
@@ -207,9 +203,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, auto);
     gap: 1em;
-    padding: 4em 1em;
-    align-items: center;
-    justify-items: center; }
+    padding: 4em 1em; }
     .main_obras .grid_conejo .mural_titles {
       text-align: center; }
       .main_obras .grid_conejo .mural_titles h4 {
@@ -230,9 +224,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, auto);
     gap: 1em;
-    padding: 4em 1em;
-    align-items: center;
-    justify-items: center; }
+    padding: 4em 1em; }
     .main_obras .grid_yacante .mural_titles {
       text-align: center; }
       .main_obras .grid_yacante .mural_titles h4 {
@@ -256,9 +248,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
     gap: 1em;
-    padding: 4em 1em;
-    align-items: center;
-    justify-items: center; }
+    padding: 4em 1em; }
     .main_obras .grid_khalo .mural_titles {
       text-align: center; }
       .main_obras .grid_khalo .mural_titles h4 {
@@ -276,9 +266,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, auto);
     gap: 1em;
-    padding: 4em 1em;
-    align-items: center;
-    justify-items: center; }
+    padding: 4em 1em; }
     .main_obras .grid_rawson .mural_titles {
       text-align: center; }
       .main_obras .grid_rawson .mural_titles h4 {
@@ -299,9 +287,7 @@
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(9, auto);
     gap: 1em;
-    padding: 4em 1em;
-    align-items: center;
-    justify-items: center; }
+    padding: 4em 1em; }
     .main_obras .grid_hamburg .mural_titles {
       text-align: center; }
       .main_obras .grid_hamburg .mural_titles h4 {
@@ -337,9 +323,7 @@
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(5, auto);
     gap: 1em;
-    padding: 4em 1em;
-    align-items: center;
-    justify-items: center; }
+    padding: 4em 1em; }
     .main_obras .grid_muebles h2 {
       color: #0b0b0bde;
       font-size: 2.5em;
