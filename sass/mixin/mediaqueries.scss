@@ -154,9 +154,19 @@
                 .pinturas{
                     flex-direction: column;
                 }
-                // .hamburg{
-                //     transform: translate(-1em, 0);
-                // }
+            }
+
+        }
+        .main_bio{
+            .section_bio{
+                .bio_intro{
+                    img{
+                        width: 100%;
+                    }
+                }
+                .bio_intro_2{
+                    flex-direction: column-reverse;
+                }
             }
         }
         footer{

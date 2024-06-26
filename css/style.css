@@ -9,18 +9,13 @@
   z-index: 1000;
   object-fit: contain; }
 
-.header {
-  background-color: #228cb0;
-  top: 10%;
-  right: 30%; }
-
 .main_bio {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   gap: 2em;
-  padding: 4em 2em; }
+  padding: 0 2em; }
   .main_bio .section_bio {
     display: flex;
     flex-direction: column;
@@ -34,16 +29,21 @@
       justify-content: center;
       margin: 3em 0; }
       .main_bio .section_bio .bio_intro img {
-        width: 60%;
+        width: 80%;
         margin: 0 auto; }
       .main_bio .section_bio .bio_intro p {
         text-wrap: balance; }
-    .main_bio .section_bio .encargos ul {
-      list-style: none; }
-      .main_bio .section_bio .encargos ul li {
-        margin-top: 1em; }
-        .main_bio .section_bio .encargos ul li span {
-          display: block; }
+    .main_bio .section_bio .encargos {
+      margin-top: 3em; }
+      .main_bio .section_bio .encargos h3 {
+        text-align: center; }
+      .main_bio .section_bio .encargos ul {
+        list-style: none; }
+        .main_bio .section_bio .encargos ul li {
+          margin-top: 1em;
+          text-wrap: balance; }
+          .main_bio .section_bio .encargos ul li span {
+            display: block; }
 
 .main_obras {
   display: flex;
@@ -52,7 +52,7 @@
   justify-content: space-evenly;
   gap: 2em;
   gap: 5em;
-  padding: 4em 2em; }
+  padding: 0 2em; }
   .main_obras .grid_acuarela {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -402,6 +402,8 @@ main .section_contacto {
 
 body {
   padding: 0 1em; }
+  body h1, body h2, body h3 {
+    font-weight: 400; }
   body header {
     width: 100%;
     display: flex;
@@ -633,5 +635,9 @@ body {
     left: 7%; }
   body main .inicio .pinturas {
     flex-direction: column; }
+  body .main_bio .section_bio .bio_intro img {
+    width: 100%; }
+  body .main_bio .section_bio .bio_intro_2 {
+    flex-direction: column-reverse; }
   body footer p {
     font-size: .8em; } }

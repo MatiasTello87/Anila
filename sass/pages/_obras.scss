@@ -3,8 +3,7 @@
 .main_obras{
     @include flex_column();
     gap: 5em;
-    padding: 4em 2em;
-   
+    padding: 0 2em;
     .grid_acuarela{
         display: grid;
         grid-template-columns: repeat(4 ,1fr);
@@ -406,5 +405,4 @@
         justify-content: center;
         gap: 3em;
     }
-    
 }
