@@ -12,6 +12,9 @@
         gap: 3em 1em;
         padding: 2em 1em;
         text-align: center;
+        h2{
+            @include subtitles();
+        }
         .pint_acuarela{
             display: flex;
             flex-direction: column;
@@ -35,6 +38,9 @@
         grid-template-rows: auto auto auto auto;
         gap: 3em;
         text-align: center;
+        h2{
+            @include subtitles();
+        }
         p{
             width: 70%;
         }
@@ -65,7 +71,9 @@
         gap: 3em;
         align-items: center;
         justify-items: center;
-        
+        h2{
+            @include subtitles();
+        }
         :nth-child(1){
             grid-column: 1/5;
             grid-row: 1/2;
@@ -112,6 +120,9 @@
         gap: 3em;
         align-items: center;
         justify-items: center;
+        h2{
+            @include subtitles();
+        }
         :nth-child(1){
             grid-column: 1/4;
             grid-row: 1/2;
@@ -143,8 +154,15 @@
         gap: 1em;
         align-items: center;
         justify-items: center;
+        h2{
+            @include subtitles();
+        }
         .mural_titles{
             text-align: center;
+            h4{
+                font-size: 1.7em;
+                font-weight: 300;
+            }
         }
         h2{
             margin-bottom: 2em;
@@ -178,9 +196,13 @@
         gap: 1em;
         align-items: center;
         justify-items: center;
+        
         .mural_titles{
-            margin-bottom: 2em;
             text-align: center;
+            h4{
+                font-size: 1.7em;
+                font-weight: 300;
+            }
         }
         :nth-child(1){
             grid-column: 1/4;
@@ -206,9 +228,13 @@
         gap: 1em;
         align-items: center;
         justify-items: center;
+        
         .mural_titles{
-            margin-bottom: 2em;
             text-align: center;
+            h4{
+                font-size: 1.7em;
+                font-weight: 300;
+            }
         }
         :nth-child(1){
             grid-column: 1/4;
@@ -237,9 +263,13 @@
         gap: 1em;
         align-items: center;
         justify-items: center;
+        
         .mural_titles{
-            margin-bottom: 2em;
             text-align: center;
+            h4{
+                font-size: 1.7em;
+                font-weight: 300;
+            }
         }
         :nth-child(1){
             grid-column: 1/4;
@@ -260,9 +290,13 @@
         gap: 1em;
         align-items: center;
         justify-items: center;
+        
         .mural_titles{
-            margin-bottom: 2em;
             text-align: center;
+            h4{
+                font-size: 1.7em;
+                font-weight: 300;
+            }
         }
         :nth-child(1){
             grid-column: 1/4;
@@ -290,8 +324,11 @@
         align-items: center;
         justify-items: center;
         .mural_titles{
-            margin-bottom: 2em;
             text-align: center;
+            h4{
+                font-size: 1.7em;
+                font-weight: 300;
+            }
         }
         :nth-child(1){
             grid-column: 1/6;
@@ -335,9 +372,15 @@
         gap: 1em;
         align-items: center;
         justify-items: center;
+        h2{
+            @include subtitles();
+        }
         .mural_titles{
-            margin-bottom: 2em;
             text-align: center;
+            h4{
+                font-size: 1.7em;
+                font-weight: 300;
+            }
         }
         :nth-child(1){
             grid-column: 1/5;

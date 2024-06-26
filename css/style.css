@@ -60,6 +60,10 @@
     gap: 3em 1em;
     padding: 2em 1em;
     text-align: center; }
+    .main_obras .grid_acuarela h2 {
+      color: #0b0b0bde;
+      font-size: 2.5em;
+      font-weight: 300; }
     .main_obras .grid_acuarela .pint_acuarela {
       display: flex;
       flex-direction: column;
@@ -78,6 +82,10 @@
     grid-template-rows: auto auto auto auto;
     gap: 3em;
     text-align: center; }
+    .main_obras .grid_varios h2 {
+      color: #0b0b0bde;
+      font-size: 2.5em;
+      font-weight: 300; }
     .main_obras .grid_varios p {
       width: 70%; }
     .main_obras .grid_varios .varios_lineas {
@@ -101,6 +109,10 @@
     gap: 3em;
     align-items: center;
     justify-items: center; }
+    .main_obras .grid_auto h2 {
+      color: #0b0b0bde;
+      font-size: 2.5em;
+      font-weight: 300; }
     .main_obras .grid_auto :nth-child(1) {
       grid-column: 1/5;
       grid-row: 1/2; }
@@ -135,6 +147,10 @@
     gap: 3em;
     align-items: center;
     justify-items: center; }
+    .main_obras .grid_retratos h2 {
+      color: #0b0b0bde;
+      font-size: 2.5em;
+      font-weight: 300; }
     .main_obras .grid_retratos :nth-child(1) {
       grid-column: 1/4;
       grid-row: 1/2; }
@@ -157,8 +173,15 @@
     gap: 1em;
     align-items: center;
     justify-items: center; }
+    .main_obras .grid_heladería h2 {
+      color: #0b0b0bde;
+      font-size: 2.5em;
+      font-weight: 300; }
     .main_obras .grid_heladería .mural_titles {
       text-align: center; }
+      .main_obras .grid_heladería .mural_titles h4 {
+        font-size: 1.7em;
+        font-weight: 300; }
     .main_obras .grid_heladería h2 {
       margin-bottom: 2em; }
     .main_obras .grid_heladería div h5 {
@@ -181,8 +204,10 @@
     align-items: center;
     justify-items: center; }
     .main_obras .grid_conejo .mural_titles {
-      margin-bottom: 2em;
       text-align: center; }
+      .main_obras .grid_conejo .mural_titles h4 {
+        font-size: 1.7em;
+        font-weight: 300; }
     .main_obras .grid_conejo :nth-child(1) {
       grid-column: 1/4;
       grid-row: 1/2;
@@ -201,8 +226,10 @@
     align-items: center;
     justify-items: center; }
     .main_obras .grid_yacante .mural_titles {
-      margin-bottom: 2em;
       text-align: center; }
+      .main_obras .grid_yacante .mural_titles h4 {
+        font-size: 1.7em;
+        font-weight: 300; }
     .main_obras .grid_yacante :nth-child(1) {
       grid-column: 1/4;
       grid-row: 1/2;
@@ -224,8 +251,10 @@
     align-items: center;
     justify-items: center; }
     .main_obras .grid_khalo .mural_titles {
-      margin-bottom: 2em;
       text-align: center; }
+      .main_obras .grid_khalo .mural_titles h4 {
+        font-size: 1.7em;
+        font-weight: 300; }
     .main_obras .grid_khalo :nth-child(1) {
       grid-column: 1/4;
       grid-row: 1/2;
@@ -241,8 +270,10 @@
     align-items: center;
     justify-items: center; }
     .main_obras .grid_rawson .mural_titles {
-      margin-bottom: 2em;
       text-align: center; }
+      .main_obras .grid_rawson .mural_titles h4 {
+        font-size: 1.7em;
+        font-weight: 300; }
     .main_obras .grid_rawson :nth-child(1) {
       grid-column: 1/4;
       grid-row: 1/2;
@@ -261,8 +292,10 @@
     align-items: center;
     justify-items: center; }
     .main_obras .grid_hamburg .mural_titles {
-      margin-bottom: 2em;
       text-align: center; }
+      .main_obras .grid_hamburg .mural_titles h4 {
+        font-size: 1.7em;
+        font-weight: 300; }
     .main_obras .grid_hamburg :nth-child(1) {
       grid-column: 1/6;
       grid-row: 1/2;
@@ -295,9 +328,15 @@
     gap: 1em;
     align-items: center;
     justify-items: center; }
+    .main_obras .grid_muebles h2 {
+      color: #0b0b0bde;
+      font-size: 2.5em;
+      font-weight: 300; }
     .main_obras .grid_muebles .mural_titles {
-      margin-bottom: 2em;
       text-align: center; }
+      .main_obras .grid_muebles .mural_titles h4 {
+        font-size: 1.7em;
+        font-weight: 300; }
     .main_obras .grid_muebles :nth-child(1) {
       grid-column: 1/5;
       grid-row: 1/2;
@@ -439,8 +478,8 @@ body {
         gap: 1.5em;
         transform: translateY(-2em); }
         body main .inicio .pinturas h2 {
-          color: #0b0b0b;
-          font-size: 2em;
+          color: #0b0b0bde;
+          font-size: 2.5em;
           font-weight: 300; }
         body main .inicio .pinturas p {
           width: 85%;
