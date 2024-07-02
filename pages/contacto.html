@@ -23,15 +23,23 @@
     </header>
     <main>
         <section class="section_contacto">
-            <h4>Deja tu mensaje</h4>
+            <h4>Contacto</h4>
             <div class="whatsapp">
-                <a href="https://wa.me/5492645293298?text=Hola, quiero más información" target="_blank"><img src="../assets/icons/whatsapp-fill.svg" alt=""></a>
+                <div>
+                    <img src="../assets/icons/whatsapp-fill.svg" alt="">
+                    <h5>Whatsapp</h5>
+                </div>
+                <a href="https://wa.me/5492645293298?text=Hola, quiero más información" target="_blank"><button>Enviar mensaje</button></a>
             </div>
             <div class="email">
                 <form action="https://formsubmit.co/matiasfernandotello@gmail.com"         method="POST">
-                    <label for="name">Ingresa tu nombre y apellido</label>
+                    <div>
+                        <img src="../assets/icons/mail.webp" alt="">
+                        <h5>Deja tu mensaje</h5>
+                    </div>
+                    <label for="name">Nombre y Apellido</label>
                     <input type="text" name="name" required>
-                    <label for="email">Ingresa tu correo electrónico</label>
+                    <label for="email">Correo electrónico</label>
                     <input type="email" name="email" required>
                     <textarea name="mensaje" placeholder="Mensaje" required></textarea>
                     <button type="submit">Enviar</button>
