@@ -694,5 +694,11 @@ body {
     width: 80%;
     flex-direction: column;
     gap: 1em; }
-  body main .section_contacto .email form {
-    align-items: center; } }
+  body main .section_contacto .email {
+    width: 80%; }
+    body main .section_contacto .email form {
+      align-items: center; }
+      body main .section_contacto .email form input {
+        width: 100%; }
+      body main .section_contacto .email form textarea {
+        width: 100%; } }
