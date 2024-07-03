@@ -665,7 +665,13 @@ body {
     gap: 2em;
     margin: 0; }
   .main_bio .section_bio .encargos ul {
-    text-align: center; } }
+    text-align: center; }
+  main .section_contacto {
+    width: 100%; }
+    main .section_contacto .whatsapp {
+      width: 90%; }
+    main .section_contacto .email {
+      width: 90%; } }
 
 @media screen and (max-width: 468px) {
   .fullscreen {
@@ -683,4 +689,10 @@ body {
   body .main_bio .section_bio .bio_intro_2 {
     flex-direction: column-reverse; }
   body footer p {
-    font-size: .8em; } }
+    font-size: .8em; }
+  body main .section_contacto .whatsapp {
+    width: 80%;
+    flex-direction: column;
+    gap: 1em; }
+  body main .section_contacto .email form {
+    align-items: center; } }

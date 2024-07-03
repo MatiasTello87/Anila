@@ -17,7 +17,6 @@
             .hamburg{
                 nav{
                     transform: translate(-23em, -2.5em);
-                    
                     ul{
                         flex-direction: row;
                         gap: 1em;
@@ -25,7 +24,6 @@
                 }
                 .nav_inicio{
                     transform: translate(-23em, -2.5em);
-
                 }
             }
         }
@@ -119,16 +117,24 @@
                 margin: 0;
             }
             .encargos{
-                // @include flex-column();
                 ul{
-                    // transform: translateY(0);
                     text-align: center;
                 }
             }
         }
-    } 
+    }
+    main{
+        .section_contacto{
+            width: 100%;
+            .whatsapp{
+                width: 90%;
+            }
+            .email{
+                width: 90%;
+            }
+        } 
+    }
 }
-
 
 @media screen and (max-width: 468px){
     .fullscreen{
@@ -173,6 +179,20 @@
                 p{
                     font-size: .8em;
                 }
+        }
+        main{
+            .section_contacto{
+                .whatsapp{
+                    width: 80%;
+                    flex-direction: column;
+                    gap: 1em;
+                }
+                .email{
+                    form{
+                        align-items: center;
+                    }
+                }
+            } 
         }
     }
 }
