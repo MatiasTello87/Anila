@@ -183,20 +183,20 @@
         main{
             .section_contacto{
                 .whatsapp{
-                    width: 80%;
+                    width: 100%;
                     flex-direction: column;
                     gap: 1em;
 
                 }
                 .email{
-                    width: 80%;
+                    width: 100%;
                     form{
                         align-items: center;
                         input{
-                            width: 100%;
+                            width: 90%;
                         }
                         textarea{
-                            width: 100%;
+                            width: 90%;
                         }
                     }
                 }

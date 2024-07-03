@@ -691,14 +691,14 @@ body {
   body footer p {
     font-size: .8em; }
   body main .section_contacto .whatsapp {
-    width: 80%;
+    width: 100%;
     flex-direction: column;
     gap: 1em; }
   body main .section_contacto .email {
-    width: 80%; }
+    width: 100%; }
     body main .section_contacto .email form {
       align-items: center; }
       body main .section_contacto .email form input {
-        width: 100%; }
+        width: 90%; }
       body main .section_contacto .email form textarea {
-        width: 100%; } }
+        width: 90%; } }
