@@ -23,6 +23,7 @@
     align-items: center;
     justify-content: space-evenly;
     gap: 2em;
+    max-width: 100%;
     gap: 1em; }
     .main_bio .section_bio .bio_intro {
       display: grid;
@@ -39,14 +40,15 @@
       margin: 3em;
       display: flex;
       flex-direction: column;
-      align-items: center; }
+      align-items: center;
+      list-style: none; }
       .main_bio .section_bio .encargos h3 {
         margin-bottom: 1em; }
       .main_bio .section_bio .encargos ul {
-        list-style: none;
         display: flex;
         justify-content: space-evenly;
         gap: 2em;
+        list-style: none;
         margin-bottom: 1em; }
         .main_bio .section_bio .encargos ul li {
           margin-top: 1em;
