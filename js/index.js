@@ -1,7 +1,4 @@
 
-
-
-
 const hamburg = document.querySelector('#hamburg');
 const linea1 = document.querySelector('#linea1');
 const linea2 = document.querySelector('#linea2');
@@ -9,19 +6,13 @@ const linea3 = document.querySelector('#linea3');
 const nav = document.querySelector('#nav');
 
 
-
 // Btn abrir hamburguesa
 
-hamburg.addEventListener('click', ()=>{
-  // hamburg.classList.toggle('invisible');
-  
+hamburg.addEventListener('click', ()=>{  
   nav.classList.add('nav_visible');
   linea1.classList.add('lin1');
   linea2.classList.add('lin2');
   linea3.classList.add('lin3');
-  console.log("hassdf");
-
-
 })
 
 // Función cerrar menú
