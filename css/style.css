@@ -686,7 +686,7 @@ body {
 
 @media screen and (max-width: 468px) {
   .fullscreen {
-    height: none; }
+    box-shadow: 0 0 0 100vmax white; }
   body header .hamburg nav {
     transform: translate(-20em, -2.5em); }
   body header .hamburg .nav_inicio {
